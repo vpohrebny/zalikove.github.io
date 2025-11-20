@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрація HTML/CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">МійСайт</div>
+            <ul class="nav-links">
+                <li><a href="#section1">Секція 1</a></li>
+                <li><a href="#section2">Секція 2</a></li>
+                <li><a href="#section3">Секція 3</a></li>
+                <li><a href="#section4">Секція 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Демонстрація можливостей</h1>
+                <p>HTML5 & CSS3</p>
+                <button class="cta-btn">Дізнатися більше</button>
+            </div>
+        </section>
+
+        <section id="section1" class="cards-section">
+            <h2>Галерея карток</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-image"></div>
+                    <h3>Картка 1</h3>
+                    <p>Тут може бути опис елементу або послуги</p>
+                    <span class="price">100 грн</span>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image"></div>
+                    <h3>Картка 2</h3>
+                    <p>Інший цікавий контент для демонстрації</p>
+                    <span class="price">200 грн</span>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image"></div>
+                    <h3>Картка 3</h3>
+                    <p>Ще один елемент у нашій колекції</p>
+                    <span class="price">150 грн</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2" class="table-section">
+            <h2>Приклад таблиці</h2>
+            <table class="demo-table">
+                <thead>
+                    <tr>
+                        <th>Назва</th>
+                        <th>Категорія</th>
+                        <th>Ціна</th>
+                        <th>Статус</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Продукт А</td>
+                        <td>Електроніка</td>
+                        <td>999 грн</td>
+                        <td><span class="status available">В наявності</span></td>
+                    </tr>
+                    <tr>
+                        <td>Продукт Б</td>
+                        <td>Книги</td>
+                        <td>450 грн</td>
+                        <td><span class="status limited">Закінчується</span></td>
+                    </tr>
+                    <tr>
+                        <td>Продукт В</td>
+                        <td>Одяг</td>
+                        <td>1200 грн</td>
+                        <td><span class="status available">В наявності</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="section3" class="form-section">
+            <h2>Контактна форма</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Категорія:</label>
+                    <select id="category" name="category">
+                        <option value="general">Загальне питання</option>
+                        <option value="support">Техпідтримка</option>
+                        <option value="sales">Продажі</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Підписатися на розсилку</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Надіслати</button>
+            </form>
+        </section>
+
+        <section id="section4" class="animation-section">
+            <h2>CSS Анімації</h2>
+            <div class="animation-container">
+                <div class="animated-box box1">Hover me</div>
+                <div class="animated-box box2">Click me</div>
+                <div class="animated-box box3">Pulse</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Демонстраційний сайт. Усі права захищені.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
